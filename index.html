@@ -10,13 +10,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* Importer les polices */
-        body {
-            font-family: 'Roboto', sans-serif;
+        /* Configuration de base */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
             background-color: #f9fafc;
             color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #004080;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #d0e4f7;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
         }
 
         /* Conteneur principal */
@@ -25,29 +59,6 @@
             max-width: 1200px;
             margin: auto;
             padding: 20px;
-        }
-
-        /* En-tête */
-        header {
-            background-color: #004080;
-            color: #fff;
-            padding: 40px 0;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        header h1 {
-            font-size: 2.8em;
-            margin-bottom: 0.2em;
-            font-weight: 700;
-        }
-
-        header p {
-            font-size: 1.2em;
-            max-width: 800px;
-            margin: auto;
-            font-weight: 400;
-            color: #d0e4f7;
         }
 
         /* Sections */
@@ -79,38 +90,41 @@
             color: #555;
         }
 
-        /* Style pour les liens */
-        a {
-            color: #004080;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Pied de page */
+        /* Footer */
         footer {
             background-color: #003366;
             color: #d0e4f7;
-            text-align: center;
             padding: 20px 0;
+            text-align: center;
             font-size: 0.9em;
-            margin-top: 40px;
         }
 
-        /* Styles pour la réactivité */
+        footer a {
+            color: #d0e4f7;
+            text-decoration: underline;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2em;
             }
 
-            header p, p {
-                font-size: 1em;
+            header nav {
+                display: flex;
+                flex-direction: column;
             }
 
             .container {
                 width: 90%;
+            }
+
+            p {
+                font-size: 1em;
             }
         }
     </style>
@@ -118,77 +132,55 @@
 
 <body>
 
+    <!-- Header -->
+    <header>
+        <h1>Notre Partenariat avec LePhish</h1>
+        <nav>
+            <a href="#partnership">Le Partenariat</a>
+            <a href="#solutions">Solutions</a>
+            <a href="#benefits">Avantages</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
     <div class="container">
 
-        <!-- En-tête de l'article -->
-        <header>
-            <h1>Notre Partenariat avec LePhish : Une Stratégie Avancée pour Protéger les Entreprises</h1>
-            <p>Avec l’évolution des cybermenaces, notre partenariat avec LePhish vise à offrir aux entreprises des solutions
-                modernes et efficaces pour lutter contre le phishing et renforcer leur cybersécurité.</p>
-        </header>
-
         <!-- Introduction au partenariat et objectifs -->
-        <section>
-            <h2>Le Phishing, une Menace Latente dans le Monde de l'Entreprise</h2>
-            <p>Le phishing consiste à piéger des individus ou des entreprises en se faisant passer pour une entité de
-                confiance afin de récupérer des informations sensibles. Les conséquences peuvent être lourdes, allant de
-                la compromission de données confidentielles à des pertes financières importantes. Avec l’évolution rapide
-                des techniques de phishing, les entreprises doivent impérativement former leurs équipes pour éviter de
-                telles attaques.</p>
-            <p>C’est pour répondre à cette menace que nous avons choisi LePhish comme partenaire stratégique. L'entreprise
-                est devenue un exemple d'expertise dans la prévention des attaques de phishing et de la sensibilisation
-                en cybersécurité, en offrant des solutions qui allient pédagogie et technologie pour protéger les
-                entreprises de manière proactive.</p>
+        <section id="partnership">
+            <h2>Le Phishing : Un Risque Croissant pour les Entreprises</h2>
+            <p>À mesure que les entreprises renforcent leur présence numérique, les cyberattaques deviennent plus sophistiquées. Parmi celles-ci, le phishing reste l’une des menaces les plus persistantes. En se faisant passer pour des entités de confiance, les cybercriminels parviennent à obtenir des informations sensibles ou à installer des logiciels malveillants. Pour contrer ce fléau, nous avons choisi de nous associer à LePhish, un exemple d'expertise dans la cybersécurité.</p>
+            <p>En collaboration avec LePhish, nous avons élaboré une stratégie visant à protéger nos clients contre les risques de phishing. Ce partenariat stratégique nous permet de proposer des solutions complètes, alliant prévention et formation, pour aider les entreprises à répondre efficacement aux cybermenaces.</p>
         </section>
 
         <!-- Présentation du partenariat et de ses bénéfices -->
-        <section>
-            <h2>LePhish : Un Partenaire de Confiance pour une Cybersécurité Renforcée</h2>
-            <p>Notre partenariat avec LePhish repose sur une vision commune : fournir aux entreprises des moyens concrets
-                d’assurer la sécurité de leurs données. En intégrant leurs solutions, nous avons accès à des simulations
-                de phishing en conditions réelles et à des programmes de formation ciblés. Ces outils permettent aux
-                collaborateurs de développer une véritable culture de cybersécurité.</p>
-            <p>Les programmes développés avec LePhish couvrent les menaces les plus actuelles, en plaçant l’humain au cœur
-                de la défense contre le phishing. LePhish nous aide ainsi à déployer des solutions qui répondent aux
-                besoins spécifiques de chaque entreprise, en renforçant la vigilance de chaque membre de l’équipe.</p>
-        </section>
-
-        <!-- Solutions proposées grâce au partenariat -->
-        <section>
-            <h2>Des Solutions Complètes pour une Défense Optimalisée</h2>
+        <section id="solutions">
+            <h2>LePhish : Un Partenaire de Confiance</h2>
+            <p>Notre partenariat avec LePhish repose sur une mission commune : offrir aux entreprises une protection contre les cyberattaques par le biais d'une formation continue et de simulations immersives. En intégrant leurs solutions à notre offre, nous permettons à nos clients de renforcer la vigilance de leurs équipes.</p>
             <h3>Simulations de Phishing et Exercices Pratiques</h3>
-            <p>Les simulations de phishing créées par LePhish plongent les collaborateurs dans des scénarios réalistes.
-                Adaptées aux besoins de chaque entreprise, elles testent et renforcent les capacités de détection de
-                chacun face aux menaces courantes. Ce processus de formation dynamique permet aux équipes de comprendre
-                les techniques de manipulation psychologique souvent employées par les cybercriminels.</p>
-
-            <h3>Formation Continue : Un Gage de Sécurité Durable</h3>
-            <p>Avec LePhish, nous proposons des modules de formation continue qui permettent de mettre à jour les
-                connaissances de chaque collaborateur. Grâce au micro-learning, les équipes peuvent accéder à des
-                contenus éducatifs courts et impactants, ce qui garantit une formation intégrée au quotidien de
-                l’entreprise sans perturber le travail.</p>
-
-            <h3>Analyse et Indicateurs de Performance</h3>
-            <p>Le partenariat avec LePhish nous permet aussi de fournir des outils d'analyse pour évaluer les progrès de
-                chaque équipe. Avec un tableau de bord intuitif, les responsables de la sécurité peuvent voir les
-                performances des équipes lors des simulations de phishing et adapter la formation en fonction des
-                vulnérabilités détectées.</p>
+            <p>Les simulations de phishing sont un moyen efficace de tester la réactivité des collaborateurs face à des scénarios réalistes. Chaque simulation est personnalisée pour refléter les schémas d'attaques les plus courants, ce qui aide les employés à reconnaître les signes d'une tentative de phishing en situation réelle.</p>
+            <h3>Formation Continue</h3>
+            <p>La cybersécurité étant en constante évolution, LePhish propose des programmes de formation continue. Avec des modules de micro-learning, les équipes peuvent se former en continu sans impacter leur productivité. Cette approche garantit que les collaborateurs restent informés des nouvelles menaces et adoptent les meilleures pratiques en cybersécurité. <a href="https://www.lephish.com" target="_blank">Découvrez leurs solutions de <strong>test de phishing et sensibilisation</strong></a> pour en savoir plus sur les outils et méthodes proposés par LePhish.</p>
         </section>
 
-        <!-- Conclusion -->
-        <section>
-            <h2>Ensemble pour une Cybersécurité Proactive et Durable</h2>
-            <p>Notre collaboration avec LePhish reflète notre engagement à aider les entreprises à faire face aux
-                cybermenaces. Cette alliance nous permet de proposer des solutions de formation, des simulations et des
-                analyses qui placent la cybersécurité au centre des préoccupations de l’entreprise moderne. Pour en
-                savoir plus sur nos solutions en partenariat avec LePhish, <a href="https://www.lephish.com"
-                    target="_blank">visitez notre site</a> ou contactez nos équipes.</p>
+        <!-- Avantages du partenariat -->
+        <section id="benefits">
+            <h2>Les Avantages d'un Partenariat Stratégique avec LePhish</h2>
+            <p>LePhish nous permet de fournir aux entreprises une cybersécurité renforcée en développant la vigilance et la résilience de chaque collaborateur. Grâce à ce partenariat, les entreprises montrent leur engagement en matière de protection des données, un aspect essentiel pour instaurer un climat de confiance avec leurs clients.</p>
+            <p>Les entreprises qui investissent dans ces programmes de formation réduisent non seulement leur exposition aux cyberattaques, mais elles se dotent également d'une culture de cybersécurité durable, capable de répondre aux nouvelles menaces.</p>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Ensemble pour une Cybersécurité Proactive</h2>
+            <p>Avec LePhish, nous nous engageons à protéger les entreprises face aux cybermenaces actuelles et à les préparer à celles de demain. Contactez-nous pour découvrir comment nos solutions de cybersécurité peuvent renforcer la protection de vos données et former vos équipes à être prêtes à faire face aux menaces modernes.</p>
+            <p>Pour en savoir plus sur nos offres et les solutions proposées en collaboration avec LePhish, <a href="https://www.lephish.com" target="_blank">visitez notre site</a> ou contactez-nous directement.</p>
         </section>
     </div>
 
-    <!-- Pied de page -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Github.io</p>
+        <p>&copy; 2024 Votre Entreprise. Tous droits réservés.</p>
+        <p><a href="https://lephish.github.io/mentions-legales.html" target="_blank">Mentions légales</a> | <a href="#contact">Contact</a> | <a href="#partnership">Retour en haut</a></p>
     </footer>
 
 </body>
